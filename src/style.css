@@ -98,7 +98,7 @@
     text-indent: -9999px;
     margin: 20px 0;
   }
-  
+   
   .pet h2 {
     white-space: nowrap;
     font-weight: normal;
@@ -114,6 +114,7 @@
     font-weight: bold;
     display: block;
     padding-bottom: 10px;
+
   }
   
   header {

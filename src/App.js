@@ -14,7 +14,7 @@ const App = ()=>{
     return(
         <Router>
         <div>
-           <h1><Link to="/">Adopt Me!</Link></h1>
+        <header><Link to="/">Adopt Me!</Link></header>
             <Routes>
                 <Route exact path='/' element={<Search/>}/>
                 <Route  path='/details/:id' element={<Details/>}/>

@@ -2,14 +2,13 @@
   "name": "reactjs",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://Arpit6055-github.io/React-tutorial",
+  "homepage": "https://Arpit6055-github.io/reactjs-tutorial",
   "scripts": {
     "format": "prettier --write \"src/**/*{js, jsx}\" ",
     "lint": "eslint \"src/**/*.{js, jsx}\" ",
     "dev": "parcel src/index.html",
     "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --public-url /React-tutorial/",
-    "predeploy": "npm ci",
+    "build": "parcel build ./src/index.html --public-url /reactjs-tutorial/",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
