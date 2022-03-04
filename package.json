@@ -7,7 +7,7 @@
     "format": "prettier --write \"src/**/*{js, jsx}\" ",
     "lint": "eslint \"src/**/*.{js, jsx}\" ",
     "dev": "parcel src/index.html",
-    "start": "cross-env NODE_ENV=development parcel .src/index.html ",
+    "start": "cross-env NODE_ENV=development parcel ./src/index.html ",
     "build": "cross-env NODE_ENV=production parcel build ./src/index.html --public-url /reactjs-tutorial/",
     "deploy": "gh-pages -d dist"
   },
