@@ -11,7 +11,7 @@ export default function useBreedList(animal){
         async function requestBreedList(){
             setbreedList([]);
             setStatus('loading');
-            const res = await fetch(`https://cors-everywhere.herokuapp.com/http://pets-v2.dev-apis.com/breeds?animal=${animal}`);
+            const res = await fetch(`https://corsapproval.herokuapp.com/http://pets-v2.dev-apis.com/breeds?animal=${animal}`);
             const json = await res.json();
             localCache[animal] = json.breeds || [];
             setbreedList(localCache[animal]);
