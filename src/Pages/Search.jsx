@@ -1,4 +1,4 @@
-import { useState , useEffect} from "react";
+import { useState } from "react";
 import useBreedList from '../Others/useBreedList.js'
 import Petresults from '../Others/Petresults.js'
 
