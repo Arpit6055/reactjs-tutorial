@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Details from './Others/Details.js'
-import { StrictMode } from "react/cjs/react.development";
 import {
     BrowserRouter as Router,
     Routes,
@@ -23,4 +22,4 @@ const App = ()=>{
         </Router>
     )
 }
-ReactDOM.render(<StrictMode> <App /> </StrictMode>, document.getElementById("root"));
+ReactDOM.render( <App />, document.getElementById("root"));
