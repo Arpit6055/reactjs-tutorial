@@ -1016,6 +1016,7 @@ var _searchDefault = parcelHelpers.interopDefault(_search);
 var _jsxRuntime = require("react/jsx-runtime");
 const App = ()=>{
     return(/*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.BrowserRouter, {
+        basename: "/reactjs-tutorial",
         children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
             children: [
                 /*#__PURE__*/ _jsxRuntime.jsx("header", {
