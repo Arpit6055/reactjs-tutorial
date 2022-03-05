@@ -22025,7 +22025,8 @@ class Details extends _react.Component {
         };
     }
     async componentDidMount() {
-        var id = window.location.href.split('/')[4];
+        var id = await window.location.href.split('/');
+        id = await id[id.length - 1];
         console.log("id is", id);
         const res = await fetch(`https://corsapproval.herokuapp.com/http://pets-v2.dev-apis.com/pets?id=${id}`);
         const json = await res.json();
@@ -22034,7 +22035,6 @@ class Details extends _react.Component {
         }, json.pets[0]));
     }
     render() {
-        console.log(this.state);
         if (this.state.loading) return(/*#__PURE__*/ _jsxRuntime.jsx("h2", {
             children: "loading \u2026 "
         }));
