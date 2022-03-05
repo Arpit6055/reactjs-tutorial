@@ -11,7 +11,7 @@ import Search from "./Pages/Search"
 
 const App = ()=>{
     return(
-        <Router>
+        <Router basename='/reactjs-tutorial'>
         <div>
         <header><Link to="/">Adopt Me!</Link></header>
             <Routes>
