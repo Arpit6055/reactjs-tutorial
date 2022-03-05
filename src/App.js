@@ -1,6 +1,7 @@
-import React from "react";
+import {React, useState} from "react";
 import ReactDOM from "react-dom";
 import Details from './Others/Details.js'
+import ThemeContext from "./Others/Themecontext.js";
 import {
     BrowserRouter as Router,
     Routes,
@@ -9,9 +10,12 @@ import {
   } from "react-router-dom";
 import Search from "./Pages/Search"
 
+
 const App = ()=>{
+    const  theme = useState('blue')
     return(
-        <Router basename='/reactjs-tutorial'>
+        <Router basename='/'>
+            <ThemeContext theme={theme}>
         <div>
         <header><Link to="/">Adopt Me!</Link></header>
             <Routes>
@@ -19,6 +23,7 @@ const App = ()=>{
                 <Route  path='/details/:id' element={<Details/>}/>
             </Routes>
         </div>
+        </ThemeContext>
         </Router>
     )
 }

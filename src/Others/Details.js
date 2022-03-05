@@ -1,11 +1,9 @@
 import { Component } from "react";
-
+import Caraosel from "./Carousel";
+import ErrorBounday from "./Errorboundary";
 
 class Details extends Component {
-    constructor(){
-        super();
-       this.state = {loading : true}
-    }
+    state = { loading: true };
     async componentDidMount(){
         var id = await (window.location.href).split('/');
         id = await id[id.length -1];
@@ -18,13 +16,12 @@ class Details extends Component {
             return <h2>loading … </h2>;
         }
 
-        const { animal, breed, city, state, description, name } = this.state;
-        const images = `https://corsapproval.herokuapp.com/`+ this.state['images'][0]
+        const { animal, breed, city, state, description, name , images} = this.state;
+       
         return(
             <div className="details ">
               <h1>{name}</h1>
-              <div className="carousel"><img  src={images} alt="img" srcset="" /></div>
-              
+              <Caraosel images={images} />
               <h2>{`${animal} — ${breed} — ${city}, ${state}`}</h2>
               <button>Adopt {name}</button>
               <p>{description}</p>
@@ -34,4 +31,12 @@ class Details extends Component {
 }
 
 
-export default Details;
+
+export default function DetailsWithoutError() {
+  return (
+    <ErrorBounday>
+        <Details />
+    </ErrorBounday>
+  )
+}
+
