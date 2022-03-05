@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState , useContext} from "react";
 import useBreedList from '../Others/useBreedList.js'
 import Petresults from '../Others/Petresults.js'
+import ThemeContext from "../Others/Themecontext.js";
 
 const ANIMAL = ["bird", "cat", "dog", "rabbit", "reptile"];
 
@@ -10,6 +11,8 @@ const Search = ()=>{
     const [breed, setBreed] = useState(' ');
     const [pets, setPet] = useState([]);
     const [breeds] = useBreedList(animal);
+    const [theme] = useContext(ThemeContext);
+   
     const updateLocation = (e)=>{
         setLocation(e.target.value);
     }
@@ -50,7 +53,7 @@ const Search = ()=>{
                         }
                    </select>
                 </label>
-                    <button type="submit">Submit</button>
+                <button style={{ backgroundColor: theme }}>Submit</button>
         
                 </label>
             </form> 
