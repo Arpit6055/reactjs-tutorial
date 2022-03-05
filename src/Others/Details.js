@@ -7,7 +7,7 @@ class Details extends Component {
        this.state = {loading : true}
     }
     async componentDidMount(){
-        var id =  (window.location.href).split('/');
+        var id = await (window.location.href).split('/');
         id = await id[id.length -1];
         console.log("id is", id);
         const res = await fetch(`https://corsapproval.herokuapp.com/http://pets-v2.dev-apis.com/pets?id=${id}`);
@@ -15,8 +15,6 @@ class Details extends Component {
         this.setState(Object.assign({ loading: false }, json.pets[0]));    
     }
     render(){
-        console.log(this.state);
-
         if (this.state.loading) {
             return <h2>loading … </h2>;
         }
