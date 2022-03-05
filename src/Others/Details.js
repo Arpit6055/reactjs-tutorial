@@ -9,7 +9,6 @@ class Details extends Component {
     async componentDidMount(){
         var id = await (window.location.href).split('/');
         id = await id[id.length -1];
-        console.log("id is", id);
         const res = await fetch(`https://corsapproval.herokuapp.com/http://pets-v2.dev-apis.com/pets?id=${id}`);
         const json = await res.json();
         this.setState(Object.assign({ loading: false }, json.pets[0]));    
@@ -20,7 +19,7 @@ class Details extends Component {
         }
 
         const { animal, breed, city, state, description, name } = this.state;
-        const images = this.state['images'][0]
+        const images = `https://corsapproval.herokuapp.com/`+ this.state['images'][0]
         return(
             <div className="details ">
               <h1>{name}</h1>
