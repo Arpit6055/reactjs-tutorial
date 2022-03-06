@@ -15,7 +15,7 @@ import Search from "./Pages/Search"
 const App = ()=>{
     const theme = useState("#cf2e2e");
     return(
-        <Router >
+        <Router basename='/' >
             <ThemeContext.Provider value={theme}>
         <div>
         <header><Link to="/">Adopt Me!</Link></header>
