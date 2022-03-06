@@ -1053,20 +1053,19 @@ var App = ()=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("header", {
                         children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
-                            to: "/",
+                            to: "/reactjs-tutorial/",
                             children: "Adopt Me!"
                         })
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_reactRouterDom.Routes, {
                         children: [
                             /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Route, {
-                                exact: true,
-                                path: "/",
+                                path: "/reactjs-tutorial/",
                                 element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Search.default, {
                                 })
                             }),
                             /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Route, {
-                                path: "/details/:id",
+                                path: "/reactjs-tutorial/details/:id",
                                 element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Details.default, {
                                 })
                             })
