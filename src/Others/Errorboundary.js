@@ -14,7 +14,7 @@ class ErrorBounday extends Component {
     }
     render() {
         if(this.state.redirect){
-            console.clear()
+            // console.clear()
            return <Navigate to={'/'} />
         }
         else if (this.state.hasError) {

@@ -13,7 +13,7 @@ import Search from "./Pages/Search"
 
 
 const App = ()=>{
-    const theme = useState("darkblue");
+    const theme = useState("#cf2e2e");
     return(
         <Router >
             <ThemeContext.Provider value={theme}>
