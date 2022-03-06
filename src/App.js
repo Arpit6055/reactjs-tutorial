@@ -15,13 +15,13 @@ import Search from "./Pages/Search"
 const App = ()=>{
     const theme = useState("#cf2e2e");
     return(
-        <Router basename='/reactjs-tutorial/' >
+        <Router >
             <ThemeContext.Provider value={theme}>
         <div>
-        <header><Link to="/reactjs-tutorial/">Adopt Me!</Link></header>
+        <header><Link to="/">Adopt Me!</Link></header>
             <Routes>
-                <Route  path='/reactjs-tutorial/' element={<Search/>}/>
-                <Route  path='/reactjs-tutorial/details/:id' element={<Details/>}/>
+                <Route exact  path='/' element={<Search/>}/>
+                <Route exact path='/details/:id' element={<Details/>}/>
             </Routes>
         </div>
         </ThemeContext.Provider>
