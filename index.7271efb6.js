@@ -1046,6 +1046,7 @@ function _interopRequireWildcard(obj, nodeInterop) {
 var App = ()=>{
     var theme = (0, _react.useState)("#cf2e2e");
     return(/*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.BrowserRouter, {
+        basename: "/reactjs-tutorial/",
         children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Themecontext.default.Provider, {
             value: theme,
             children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
