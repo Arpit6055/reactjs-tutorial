@@ -18,10 +18,10 @@ const App = ()=>{
         <Router basename='/reactjs-tutorial/' >
             <ThemeContext.Provider value={theme}>
         <div>
-        <header><Link to="/">Adopt Me!</Link></header>
+        <header><Link to="/reactjs-tutorial/">Adopt Me!</Link></header>
             <Routes>
-                <Route exact path='/' element={<Search/>}/>
-                <Route  path='/details/:id' element={<Details/>}/>
+                <Route  path='/reactjs-tutorial/' element={<Search/>}/>
+                <Route  path='/reactjs-tutorial/details/:id' element={<Details/>}/>
             </Routes>
         </div>
         </ThemeContext.Provider>
