@@ -20,8 +20,8 @@ const App = ()=>{
         <div>
         <header><Link to="/">Adopt Me!</Link></header>
             <Routes>
-                <Route exact  path='/' element={<Search/>}/>
-                <Route exact path='/details/:id' element={<Details/>}/>
+                <Route exact  path='/reactjs-tutorial/' element={<Search/>}/>
+                <Route exact path='/reactjs-tutorial/details/:id' element={<Details/>}/>
             </Routes>
         </div>
         </ThemeContext.Provider>
