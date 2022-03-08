@@ -24602,12 +24602,24 @@ $RefreshReg$(_c, "Petresults");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"../Pages/Pet":"dhZ4O","react":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dhZ4O":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$68fa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$68fa.prelude(module);
+
+try {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = void 0;
 var _reactRouterDom = require("react-router-dom");
+var _react = _interopRequireDefault(require("react"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 var Pet = (props)=>{
     var { name , animal , breed , images , location , id  } = props;
     var hero = "https://corsapproval.herokuapp.com/http://pets-images.dev-apis.com/pets/none.jpg";
@@ -24616,16 +24628,16 @@ var Pet = (props)=>{
         hero = images[0];
         hero = 'https://corsapproval.herokuapp.com/' + hero;
     }
-    return(/*#__PURE__*/ React.createElement(_reactRouterDom.Link, {
+    return(/*#__PURE__*/ _react.default.createElement(_reactRouterDom.Link, {
         to: "/details/".concat(id),
         className: "pet"
-    }, /*#__PURE__*/ React.createElement("div", {
+    }, /*#__PURE__*/ _react.default.createElement("div", {
         className: "image-container"
-    }, /*#__PURE__*/ React.createElement("img", {
+    }, /*#__PURE__*/ _react.default.createElement("img", {
         src: hero
-    })), /*#__PURE__*/ React.createElement("div", {
+    })), /*#__PURE__*/ _react.default.createElement("div", {
         className: "info"
-    }, /*#__PURE__*/ React.createElement("h1", null, name), /*#__PURE__*/ React.createElement("h2", null, "".concat(animal, " \u2014 ").concat(breed, " \u2014 ").concat(location)))));
+    }, /*#__PURE__*/ _react.default.createElement("h1", null, name), /*#__PURE__*/ _react.default.createElement("h2", null, "".concat(animal, " \u2014 ").concat(breed, " \u2014 ").concat(location)))));
 };
 _c = Pet;
 var _default = Pet;
@@ -24633,6 +24645,11 @@ exports.default = _default;
 var _c;
 $RefreshReg$(_c, "Pet");
 
-},{"react-router-dom":"fdOAw"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequiredf89")
+  $parcel$ReactRefreshHelpers$68fa.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react-router-dom":"fdOAw","react":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequiredf89")
 
 //# sourceMappingURL=index.7271efb6.js.map
