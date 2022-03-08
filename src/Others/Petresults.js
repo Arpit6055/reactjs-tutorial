@@ -1,5 +1,5 @@
 import Pet from '../Pages/Pet'
-
+import React from "react";
 const Petresults = (props)=>{
     return (
         <div className='search'>
