@@ -1052,11 +1052,11 @@ var App = ()=>{
         to: "/"
     }, "Adopt Me!")), /*#__PURE__*/ _react.default.createElement(_reactRouterDom.Routes, null, /*#__PURE__*/ _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
-        path: "/",
+        path: "/reactjs-tutorial/",
         element: /*#__PURE__*/ _react.default.createElement(_Search.default, null)
     }), /*#__PURE__*/ _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
-        path: "/details/:id",
+        path: "/reactjs-tutorial/details/:id",
         element: /*#__PURE__*/ _react.default.createElement(_Details.default, null)
     }))))));
 };
